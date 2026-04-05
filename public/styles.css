@@ -1,0 +1,63 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fdfdfd;
+  color: #0D0033;
+}
+
+h2 { font-family: 'Orbitron', sans-serif; margin-bottom: 20px; }
+
+
+.header { display: flex; justify-content: space-between; padding: 20px 5%; background: white; align-items: center; }
+.logo { font-family: 'Orbitron', sans-serif; font-weight: bold; font-size: 22px; }
+.header nav a { margin-left: 20px; text-decoration: none; color: black; font-size: 14px; }
+.search-box { padding: 10px 5%; background: white; }
+.search-box input { width: 100%; padding: 10px 20px; border-radius: 20px; border: 1px solid #ddd; outline: none; }
+
+
+.hero { background: #07001C; text-align: center; padding: 20px 5% 40px; color: white; }
+.hero img { width: 100%; max-height: 300px; object-fit: cover; border-radius: 10px; }
+.hero h1 { font-family: 'Orbitron', sans-serif; margin-top: 20px; color: #FF00C8; font-size: 24px; }
+.hero h1 span { color: #39FF14; }
+.hero button { margin-top: 15px; background: #6C00FF; color: white; border: none; padding: 12px 25px; border-radius: 20px; font-weight: bold; cursor: pointer; }
+
+
+.secao-site { padding: 40px 5%; }
+
+
+.grid-categorias { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.card-preto { 
+  background: #0D0033; 
+  border-radius: 15px; 
+  padding: 20px; 
+  text-align: center; 
+  color: white; 
+}
+.card-preto img { width: 100px; height: 100px; object-fit: contain; margin-bottom: 10px; }
+.card-preto p { font-family: 'Orbitron', sans-serif; font-size: 14px; }
+
+
+.grid-produtos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.card-produto { background: white; border-radius: 10px; overflow: hidden; border: 1px solid #eee; display: flex; flex-direction: column; }
+.produto-img { padding: 15px; display: flex; justify-content: center; align-items: center; height: 180px; }
+.produto-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.produto-info { background: #EAEAEA; padding: 15px; border-top: 1px solid #ddd; }
+.produto-info p { font-weight: bold; font-size: 14px; margin-bottom: 5px; }
+.produto-info span { font-family: 'Orbitron', sans-serif; font-size: 14px; }
+
+.ver-mais { text-align: right; margin-top: 15px; color: #6C00FF; font-weight: bold; cursor: pointer; font-size: 14px; text-decoration: underline; }
+
+
+.newsletter { background: #39FF14; padding: 40px 5%; text-align: center; }
+.newsletter h2 { margin-bottom: 10px; }
+.newsletter p { font-size: 13px; margin-bottom: 20px; }
+.form-news { display: flex; justify-content: center; gap: 10px; max-width: 500px; margin: 0 auto; }
+.form-news input { flex: 1; padding: 12px 20px; border-radius: 25px; border: none; outline: none; }
+.form-news button { background: #6C00FF; color: white; border: none; padding: 0 20px; border-radius: 25px; font-weight: bold; cursor: pointer; }
+
+footer { background: #020010; color: white; text-align: center; padding: 20px; font-family: 'Orbitron', sans-serif; font-size: 12px; }
+
+@media (max-width: 800px) {
+  .grid-categorias, .grid-produtos { grid-template-columns: repeat(2, 1fr); }
+}
